@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-brand-peach: #FFCCBB;
+  --color-soft-peach: #FFF9F5;
+  --color-accent-peach: #FFB399;
+}
+
+/* Fix for Leaflet marker icons in Vite */
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png);
+}
+
+/* Cute Popup Styling */
+.cute-popup .leaflet-popup-content-wrapper {
+  border-radius: 24px;
+  padding: 8px;
+  box-shadow: 0 20px 40px -10px rgba(255, 204, 187, 0.2);
+  border: 1px solid rgba(255, 204, 187, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.cute-popup .leaflet-popup-tip {
+  box-shadow: 0 10px 25px -5px rgba(255, 204, 187, 0.2);
+}
+
+.custom-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFEBDD;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFDCC5;
+}
+

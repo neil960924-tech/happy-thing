@@ -1,0 +1,5 @@
+{
+  "name": "趣事地圖 Life Moments Map",
+  "description": "一個讓大家在地圖上分享生活趣事與回憶的互動平台。",
+  "requestFramePermissions": ["geolocation"]
+}
